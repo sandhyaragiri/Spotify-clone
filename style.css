@@ -39,9 +39,15 @@ body {
     align-items: center;
 }
 
+.classlogo {
+    font-size: 4em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #C77DFF;
+}
+
 .appIcon {
   font-size: var(--font-size);
-  color:#41ef55;
+  color: #C77DFF;
   font-style: normal;
   font-weight: 500;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,8 +71,8 @@ body {
 }
 
 .topnav ul li a:hover {
-    color: #42f700;
-    border-bottom: 2px solid #42f700;
+    color: #C77DFF;
+    border-bottom: 2px solid #C77DFF;
 }
 
 .login-right {
@@ -85,8 +91,8 @@ body {
 }
 
 .login-right:hover {
-    border: 2px dotted #42f700;
-    color:rgb(25, 241, 25);
+    border: 2px dotted #C77DFF;
+    color:#C77DFF;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -94,6 +100,10 @@ body {
 
 
  /* HERE IS MAIN SECTION STYLING GOES */
+
+ main {
+    background-color: #E0AAFF;
+ }
 
  .textsection {
     max-width: 500px;
@@ -125,7 +135,7 @@ body {
  button {
     margin-top: 30px;
     padding: 10px 15px;
-    background-color: rgb(25, 241, 25);
+    background-color: #C77DFF;
     border: none;
     border-radius: 30px;
     font-size: 1.2em;
@@ -134,27 +144,69 @@ body {
  }
 
  button:hover {
-    color: rgb(25, 241, 25);
+    color: #ecebee;
     background-color: transparent;
-    border: 1px solid rgb(25, 241, 25);
+    border: 1px solid #C77DFF;
     transform: scale(1.05);
  }
 
- /*...RIGHT CONTENT...*/
- .rightcontent {
-    position: relative;
-    width: 500px;
+ /*...RIGHT CONTENT USED GRIDS...*/
+ .gridcontainer {
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   grid-template-rows: repeat(4, 100px);
+   gap: 15px;
+ }
+
+ .box{
+    background-color: transparent;
+    box-shadow: 0 0 10px rgb(172, 74, 225);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+ #box1{
+    grid-column: span 2;
+    background: linear-gradient(to bottom left, red, rgb(235, 125, 125));
 
  }
 
- .rightcontent img {
-    width: 100%;
+ #box2 {
+    grid-column: span 1;
+     background: linear-gradient(to bottom left, rgb(77, 30, 198), rgb(109, 117, 183));
  }
+
+ #box3 {
+    grid-column: span 3;
+     background: linear-gradient(to bottom left, rgb(12, 181, 167), rgb(164, 223, 235));
+ }
+
+ #box4 {
+    padding: 10px;
+    grid-column: span 1;
+     background: linear-gradient(to bottom left, rgb(255, 0, 174), rgb(244, 151, 219));
+ }
+
+ #box5 {
+    grid-column: span 2;
+     background: linear-gradient(to bottom left, rgb(243, 216, 9), rgb(241, 245, 153));
+ }
+
 
  /*...FOOTER SECTION GOES HERE...*/
 
  .footer {
-    background-color: #41ef55;
+    background-color: #C77DFF;
     border-radius: 0 0 10px 10px;
     padding: 15px;
     color: black;
