@@ -1,32 +1,78 @@
-# Spotify-clone
-Spotify web clone created to practice frontend development skills including layout, styling, and JavaScript functionality.
+# Lavsy 🎵 – Music Web UI
 
-## 🤝 Collaboration
+Lavsy is a modern music web interface inspired by Spotify, designed with a dark theme and lavender accent colors.
+This project focuses on frontend layout design using HTML, CSS (Flexbox & Grid), and UI styling.
 
-This Spotify Clone project is being developed as a collaborative project.
+## 🚀 Features
 
-We are working together using GitHub to:
+* Dark theme UI
+* Lavender gradient design
+* Responsive header navigation
+* Hero section with intro text
+* Gradient grid cards layout
+* Styled buttons and hover effects
+* Footer section
+* Modern UI layout using Flexbox and Grid
+* CSS variables for theme colors
 
-* Share code
-* Push commits
-* Create branches
-* Fix bugs together
-* Improve UI and functionality
-* Learn real-world team workflow
+## 🛠️ Built With
 
-### Collaboration Workflow
+* HTML5
+* CSS3
+* Flexbox
+* CSS Grid
+* Google Fonts / System Fonts
 
-1. One person creates the repository
-2. Add collaborator in GitHub
-3. Clone the repository
-4. Create a new branch
-5. Make changes
-6. Commit and push
-7. Create Pull Request
-8. Merge changes
+## 🎨 Theme Colors
 
-This project is not just about building a Spotify clone, but also about learning **team collaboration, Git, GitHub workflow, and real developer environment**.
+* Black background
+* Lavender (#C77DFF)
+* Purple gradients
+* Neon glow effects
+
+## 📂 Project Structure
+
+```
+project-folder
+│
+├── index.html
+├── style.css
+└── README.md
+```
+
+## 📸 UI Sections
+
+1. Header / Navigation Bar
+2. Hero Section (Intro Text + Button)
+3. Grid Cards Section
+4. Footer Section
+
+## 🎯 Purpose of Project
+
+This project was built to practice:
+
+* Layout design
+* Flexbox
+* CSS Grid
+* Gradients
+* Hover effects
+* UI design principles
+
+## 📌 Future Improvements
+
+* Add JavaScript functionality
+* Music player controls
+* Responsive design for mobile
+* Animations
+* Login page
+* Playlist section
+
+## 👩‍💻 Author
+
+**Sandhya**
+Frontend Developer (Fresher)
+Passionate about building creative web interfaces.
 
 ---
 
-**Built with teamwork and learning mindset 🚀**
+⭐ If you like this project, give it a star on GitHub!
