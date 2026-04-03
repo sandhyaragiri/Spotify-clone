@@ -16,29 +16,29 @@
     <header class="header" id="header">
         <nav class="topnav" id="topnav">
             <div class="classlogo">L</div>
-            <div class="appIcon"> 
-            <h2>avsy</h2> </div>
+            <div class="appIcon">
+                <h2>avsy</h2>
+            </div>
             <!--used unordered list cus easy grouping the links-->
-            <ul>
+            <ul class="navbaritems">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Premium</a></li>
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Download</a></li>
             </ul>
-            <button class="login-right" id="login" type="button">Login</button>
-        </nav>
+            <button class="login-right" id="login" type="button">Login</button>        </nav>
     </header>
 
     <!-- This could be the left body content -->
     <main class="container">
         <div class="leftcontent"> <!-- Could be a Flexbox -->
-            
-            <div class="textsection">
-                <div class="introtext">
+
+            <div class="textsection" id="text">
+                <div class="introtext" id="intro">
                     One app for<br>all your sounds
                 </div>
-                <div class="subtext">
-                    Discover podcasts, find new music,<br> 
+                <div class="subtext" id="extro">
+                    Discover podcasts, find new music,<br>
                     and connect to your favourite artists – all in one place.
                 </div>
                 <button type="button">Join Now</button>
@@ -53,6 +53,13 @@
             <div class="box" id="box4">THE WEEKEND</div>
             <div class="box" id="box5">TAYLOR SWIFT</div>
         </div>
+        <div class="gridcontainer2">
+            <div class="box" id="box1">BLACKPINK</div>
+            <div class="box" id="box2">BTS</div>
+            <div class="box" id="box3">ARIANA GRANDE</div>
+            <div class="box" id="box4">THE WEEKEND</div>
+            <div class="box" id="box5">TAYLOR SWIFT</div>
+        </div>
     </main>
 
 
@@ -60,11 +67,13 @@
         <ul>Privacy Policies</ul>
         <ul>Terms of Service</ul>
         <ul>Contact Us</ul>
-        <ul>2026 Lavsy app</ul>
+        <ul>2026 Lavsy app &copy</ul>
     </footer>
 </body>
 <script>
 
+let txt = document.getElementById("text");
+txt.classList.add("trans");
 </script>
 
 </html>

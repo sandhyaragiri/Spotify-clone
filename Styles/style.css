@@ -30,6 +30,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
+    position: sticky;
+    top: 0px;
 }
 
 .topnav{
@@ -43,6 +45,24 @@ body {
     font-size: 4em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #C77DFF;
+    position: absolute;
+    padding-left: 140px;
+    border-radius: 15px 0 5px 0;
+    background-color: black;
+    animation: swipeLeft 2s normal 0s 1 ease-out forwards;
+    
+}
+
+@keyframes swipeLeft {
+    0%{
+        left: 30px;
+        padding-left: 100px;
+    }
+    100%{
+        left: 0px;
+        padding-left: 0px;
+    
+    }  
 }
 
 .appIcon {
@@ -52,6 +72,7 @@ body {
   font-weight: 500;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-right: auto;
+  margin-left: 5px;
 }
 
 .topnav ul {
@@ -59,6 +80,8 @@ body {
    display: flex;
    gap: 20px;
    align-items: center;
+   position: sticky;
+    top: 0;
 }
 
 .topnav ul li a{
@@ -107,8 +130,13 @@ body {
 
  .textsection {
     max-width: 500px;
+    transition: left 3s;
+    position: relative;
+    left: 100px;
 }
-
+div.trans{
+    left: 0px;
+}
  .container{
     display: flex;
     justify-content: space-between;
@@ -123,7 +151,9 @@ body {
     font-size: 3.5em;
     font-weight: bold;
     line-height: 1.2;
+    
  }
+
 
  .subtext {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -157,6 +187,9 @@ body {
    grid-template-rows: repeat(4, 100px);
    gap: 15px;
  }
+ .gridcontainer2{
+    display: none;
+ }
 
  .box{
     background-color: transparent;
@@ -180,6 +213,7 @@ body {
     background: linear-gradient(to bottom left, red, rgb(235, 125, 125));
 
  }
+ 
 
  #box2 {
     grid-column: span 1;
@@ -211,7 +245,6 @@ body {
     padding: 15px;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -221,6 +254,66 @@ body {
 .footer ul:hover {
     text-decoration: underline;
     color: white;
+}
+/*       Small Screen Styling :)       */
+
+@media screen and (max-width:710px) {
+    .rigthcontainer{
+        width: 100%;
+    }
+    .gridcontainer{
+        display: none;
+    }
+    .topnav{
+        position: sticky;
+        top: 0;
+    }
+    .container{
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+    .footer{
+        width: 100%;
+    }
+    .topnav ul{
+        display: none;
+    }
+    .gridcontainer2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+    }
+    .box{
+    width: 100%;
+    height: 130px;
+    }
+    body {
+            margin: 10px;
+     }
+
+         @keyframes swipeLeft {
+             0% {
+                 left: 0px;
+                 padding-left: 100px;
+             }
+    
+             100% {
+                 left: -30px;
+                 padding-left: 0px;
+    
+             }
+         }
+         .header{
+            border-radius: 9px 0 11px 0 ;
+            background-color: #000;
+            z-index: 1;
+         }
+    
 }
 
  
